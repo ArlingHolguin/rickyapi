@@ -1,15 +1,16 @@
 // import axios from 'axios';
 
-function getCharacterdata(id) {
+function getCharacterdata() {
     let app = document.getElementById('app');
-    axios.get(`https://rickandmortyapi.com/api/character/${id}`)
+    let caracter = document.getElementById('valueId').value
+    axios.get(`https://rickandmortyapi.com/api/character/${caracter}`)
         .then((response) => {
             const character = response.data;
             console.log(character);
             app.innerHTML = `
             <div class="container-main">
                 <img src="img/logo2.png" alt="ricky" width="80" height="80">
-                <h1>Rick and Morty</h1>
+                <h1>${character.name}</h1>
             </div>
             <div class="card">
                 <div class="image">
@@ -31,4 +32,3 @@ function getCharacterdata(id) {
         })
         .catch((error) => console.log(error))
 }
-getCharacterdata(1);
