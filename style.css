@@ -20,9 +20,35 @@ body {
     background-color: #a0a0ad;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .input-search {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    h1 {
+        font-size: 6rem;
+    }
+    .input-search {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 8rem;
+    }
+    .input-search {
+        font-size: 2rem;
+    }
+}
+
 h1 {
     font-family: 'Chewy', cursive;
-    font-size: 8rem;
 }
 
 .container {
@@ -73,7 +99,7 @@ h1 {
     border: 0;
     background-color: #e0f0ea;
     font-family: 'Chewy', cursive;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 .iconos {
