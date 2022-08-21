@@ -24,26 +24,17 @@ body {
     h1 {
         font-size: 3rem;
     }
-    .input-search {
-        font-size: 1rem;
-    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     h1 {
         font-size: 6rem;
     }
-    .input-search {
-        font-size: 2rem;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
     h1 {
         font-size: 8rem;
-    }
-    .input-search {
-        font-size: 2rem;
     }
 }
 
