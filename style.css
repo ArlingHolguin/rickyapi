@@ -69,6 +69,10 @@ h1 {
     padding: 1px;
 }
 
+h2 {
+    font-family: 'Chewy', cursive;
+}
+
 
 /* .box-logo img {
     width: auto;
@@ -89,8 +93,8 @@ h1 {
     padding-left: 2rem;
     border: 0;
     background-color: #e0f0ea;
-    font-family: 'Chewy', cursive;
-    /* font-size: 2rem; */
+    /* font-family: 'Chewy', cursive; */
+    font-size: 1rem;
 }
 
 .iconos {
